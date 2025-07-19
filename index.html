@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Final Project 1</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/63acc55e1c.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <section>
-        <nav>
-            <div class="nav__container">
-            <img class="logo" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
-          
+    <link rel="stylesheet" href="./style.css" />
+  
+    <script
+      src="https://kit.fontawesome.com/63acc55e1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="row nav__row">
         
-            <ul class="nav__links">
-                <li><a href="" class="nav__link">About</a></li>
-                <li><a href="" class="nav__link">Blog</a></li>
-                <li><a href="" class="nav__link">Pricing</a></li>
-                <li><a href="" class="nav__link">Contact Us</a></li>
-                <button class="btn__menu1"><a href="">Login</a></button>
-                <button class="btn__menu2"><a href="">Sign Up</a></button>
-                
+          <div class="nav__logo">
+            <img
+              class="nav__logo--img"
+              src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="logo">
             
-        </nav>
-        <main>
-            <h1>Beautiful React Templates <span>for you</span></h1>
-        </main>
-        <header>
+            <div class="nav__logo--title">Treact</div>
+          </div>
 
-        </header>
+          <div class="nav__links">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link nav__link--login">Login</a>
+            <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+            <button class="btn__menu" onclick="openMenu()"></button>
+            </div>
+            
+          
+            
+        </div>
+        </nav>
         
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+            Beautiful React Templates <span class="purple">for you</span>
+              <p class="header__description--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+            </div>
+            <div class="header__email">
+              <input type="text" class="header__email--input" placeholder="Your Email Address">
+              <button class="header__email--btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+      
+        
+      
+      
     </section>
-    </body>
-    </html>
+  </body>
+</html>
