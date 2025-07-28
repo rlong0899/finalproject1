@@ -97,6 +97,9 @@ nav {
     letter-spacing: 0.6px;
     padding-bottom: 2px;
 }
+.container {
+    padding: 96px 0;
+}
 .header__description {
     margin-top: 32px;
     font-size: 24px;
@@ -129,8 +132,19 @@ h1 {
     font-size: 16px;
     transition: all 300ms;
 }
+.header__customers--title {
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
 .header__customers {
     margin-top: 16px;
-    padding-right: 128px;
+    display: flex;
+    gap: 24px;
     opacity: 0.5;
+}
+img {
+    width: 100%;
 }
