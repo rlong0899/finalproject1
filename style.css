@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+.container {
+    padding: 96px 0;
+}
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243e63;
@@ -97,26 +99,50 @@ nav {
     letter-spacing: 0.6px;
     padding-bottom: 2px;
 }
-.container {
-    padding: 96px 0;
-}
+
 .header__description {
+    width: calc(100% - 41.6667%);
     margin-top: 32px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 1.2;
 }
 
 .header__description--para {
-    margin-top: 16px;
+    margin: 32px 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #6b7280;
 }
 h1 {
+    font-size: 36px;
     color: #1a202c;
     line-height: 1.25;
+    
+}
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
 }
 .header__email--btn {
     z-index: 2;
@@ -139,12 +165,160 @@ h1 {
     font-weight: 700;
     letter-spacing: 0.6px;
 }
-.header__customers {
-    margin-top: 16px;
-    display: flex;
-    gap: 24px;
-    opacity: 0.5;
+@media (max-width: 1280px) {
+    .header__customers {
+        padding-right: 64px;
+    }
+}
+.header__img--wrapper {
+    width: calc(100% - 41.6667%);
 }
 img {
     width: 100%;
+}
+.row__narrow {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+
+
+.section__tag {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: purple
+}
+.section__title {
+    margin-top: 32px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+.section__para {
+    margin-top: 32px;
+    display: flex;
+    text-align: center;
+}
+.feature__cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+    padding: 0 32px;
+}
+
+.feature__card {
+    width: 100%;
+    max-width: 384px;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+    transition: all 300ms;
+}
+.feature__title {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    text-align: left;
+    margin-top: 16px;
+    color: #1a202c;
+}
+.feature__para {
+    font-size: 16px;
+    font-weight: 500;
+    
+    text-align: left;
+    color: #6b7280;
+    margin-top: 8px;
+}
+.secure__icon {
+    width: 24px;
+    height: 24px;
+    
+    fill: #6415ff;
+}
+.headset__icon {
+    width: 24px;
+    height: 24px;
+    
+    fill: #6415ff;
+}
+.customizable__icon {
+    width: 24px;
+    height: 24px;
+    
+    fill: #6415ff;
+}
+.reliable__icon {
+    width: 24px;
+    height: 24px;
+    
+    fill: #6415ff;
+}
+.fast__icon {
+    width: 24px;
+    height: 24px;
+    
+    fill: #6415ff;
+}
+.easy__icon {
+    width: 24px;
+    height: 24px;
+    
+    fill: #6415ff;
+}
+.row__wide {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.quality__description {
+    width: calc(100% - 41.6667%);
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+    
+}
+    .quality__img--wrapper {
+        width: calc(100% - 41.6667%);
+    }
+    .row__wide {
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+    }
+    
+
+.quality__tag {
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: purple
+}
+.quality__title {
+    margin-top: 32px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #1a202c;
+    line-height: 1.25;
+}
+.quality__para {
+    margin: 32px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6b7280;
+}
+.footer__logo--img {
+    width: 40px;
+    height: 40px;
 }
