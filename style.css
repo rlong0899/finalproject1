@@ -970,11 +970,10 @@ footer {
 }
 .footer__socials {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-left: -16px;
 }
-.footer__social--link {
+.social__link {
     margin-left: 16px;
     padding: 8px;
     background: #f7fafc;
@@ -984,8 +983,4 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms ease;
-}
-.footer__social--link svg {
-    height: 24px;
-    width: 24px;
 }
