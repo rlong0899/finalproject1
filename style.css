@@ -972,10 +972,13 @@ footer {
     display: flex;
     align-items: center;
     margin-left: -16px;
+    gap: 24px;
 }
 .social__link {
     margin-left: 16px;
     padding: 8px;
+    width: 32px;
+    height: 32px;
     background: #f7fafc;
     display: flex;
     justify-content: center;
