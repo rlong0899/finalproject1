@@ -34,10 +34,52 @@
             <a href="#" class="nav__link nav__link--login">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
-          <button class="btn__menu" onclick="openMenu()"></button>
-          
+          <button class="btn__menu" onclick="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+          </button>
+          </div>
+          </nav>
+          <div class="menu">
+            <button class="btn__menu button__menu--close" onclick="closeMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="btn__menu--svg">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="menu__links">
+              <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+              <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+              <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+              <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+              <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+              <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+          </div>
         </div>
-      </nav>
+      
     <header>
       <div class="container">
         <div class="row">
@@ -93,7 +135,7 @@
               <figure class="feature__img--wrapper">
                 <img
                   src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="feature__img"
-                  alt=""
+                  
                 />
               </figure>
                 <div class="feature__text">
@@ -109,7 +151,7 @@
                 <figure class="feature__img--wrapper">
                  <img
                   src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="feature__img"
-                  alt=""
+                  
                 />
                 </figure>
                 <div>
@@ -126,7 +168,7 @@
                 <img
                   
                   src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="feature__img"
-                  alt=""
+                  
                 />
                 </figure>
                 <div>
@@ -160,7 +202,7 @@
                 <img
                   
                   src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" class="feature__img"
-                  alt=""
+                  
                 />
                 </figure>
                 <div>
@@ -177,7 +219,7 @@
                 <img
                   
                   src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" class="feature__img"
-                  alt=""
+                  
                 />
                 </figure>
                 <div>

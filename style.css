@@ -66,6 +66,11 @@ h1 {
     color: #1a202c;
     line-height: 1.25;
     }
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+}
 h2 {
     display: block;
     font-size: 1.5em;
@@ -86,6 +91,11 @@ h2 {
     font-weight: bold;
     transition: all 300ms ease;
     cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .btn__menu {
+        display: block;
+    }
 }
 .btn__menu {
     background-color: transparent;
@@ -122,6 +132,11 @@ nav {
     align-items: center;
     padding-bottom: 2px;
 }
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+}
 
 .nav__link {
     font-size: 14px;
@@ -153,10 +168,42 @@ nav {
 .btn__menu {
     background-color: transparent;
     border: none;
-    display: none;
     transition: all 300ms ease;
 }
-
+@media (max-width: 1024px) {
+    .btn__menu {
+        display: block;
+    }
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 378px;
+    margin: 24px 16px;
+    padding: 32px;
+    background-color: #fff;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(300%);
+    transition: all 300ms ease;
+}
+.menu__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+}
 .nav__logo--title {
     font-size: 24px;
     font-weight: 900;
@@ -168,12 +215,33 @@ nav {
 header {
     position: relative;
 }
+@media (max-width: 1024px) {
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 header .row {
     display: flex;
     justify-content: space-between;
 }
 .header__description {
     width: 40%;
+}
+@media (max-width: 1024px) {
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1024px) {
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
 }
 
 .header__description--para {
@@ -183,8 +251,16 @@ header .row {
     line-height: 1.5;
     color: #6b7280;
 }
-
-
+@media (max-width: 1024px) {
+    .header__description--para {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 1280px) {
+    .header__description--para {
+        font-size: 16px;
+    }
+}
 
 .header__email {
     width: 100%;
@@ -194,6 +270,9 @@ header .row {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-radius: 50%;
+    border-color: #6415ff;
+    hover-effect: border-color 300ms;
 }
 
 .header__email--input {
@@ -228,6 +307,11 @@ header .row {
 .trusted__customers {
 
 }
+@media (max-width: 1024px) {
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
+}
 .header__customers--title {
     margin-top: 80px;
     color: #a0aec0;
@@ -245,9 +329,9 @@ header .row {
     width: calc(100% - 40%);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
     .header__customers {
-        max-width: 512px;
+        padding-right: 0px;
     }
 }
 .header__img {
@@ -260,9 +344,21 @@ header .row {
     }
 }
 
-
-
-
+@media (max-width: 1024px) {
+    #features .section__title, #pricing .section__title {
+        font-size: 48px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .section__para {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+#features {
+    position: relative;
+}
 .row__narrow {
     width: 100%;
     max-width: 1024px;
@@ -541,7 +637,12 @@ header .row {
     width: 100%;
     justify-content: space-between;
 }
-
+@media (max-width: 1024px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .plan {
     position: relative;
     margin-top: 4rem;
@@ -983,4 +1084,11 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms ease;
+}
+
+@media (max-width:728px) {
+    .row {
+        flex-direction: column;
+    }
+    
 }
